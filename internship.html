@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships</title>
+    <link rel="icon" type="image/x-icon" href="Images/in.png">
+    <link rel="stylesheet" href="internship.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="navbar">
+            <div class="burger-icon" onclick="toggleNav()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div> 
+
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="internship.html">Internships</a>
+            <a href="projects.html">Projects</a>
+            <a href="certificates.html">Certificates</a>
+        </nav>
+    </header>
+
+    <h1 class="in">Internships</h1>
+    <hr><br>
+    <div class="i">
+        <img src="Images/Intern.svg" alt="Internship" width="1000px" height="600px">
+    </div>   
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector('.navigation');
+            nav.classList.toggle('show-nav');
+        }
+    </script>
+</body>
+</html>

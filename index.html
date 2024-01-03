@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LP Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/744/744418.png?ga=GA1.1.2087154549.1663432512&semt=ais">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="navbar">
+            <div class="burger-icon" onclick="toggleNav()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div> 
+           
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="skills.html">Skills</a>
+            <a href="internship.html">Internships</a>
+            <a href="projects.html">Projects</a>
+            <a href="certificates.html">Certificates</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="content">
+            <h2>Hi, I'm <br> <span>C.Logesh Perumal</span></h2>
+            <h4>Aspiring Data Scientist</h4>
+            <p>Python is my passion, and I enjoy working with it. At the
+            moment, I am actively exploring the realms of Machine
+            Learning , Deep Learning and Data Science Projects using
+            Python.
+            </p>
+
+            <div class="btn-group">
+                <a href="mailto: clogeshperumal@gmail.commailto: clogeshperumal@gmail.com">Hire Me</a>
+                <a href="projects.html">See Projects</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="mailto: clogeshperumal@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/C-Logesh-Perumal-29/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/logesh-perumal-c-124465230/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <img src="Images/LP.png" alt="Image">
+    </section>
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector('.navigation');
+            nav.classList.toggle('show-nav');
+        }
+    </script>
+</body>
+</html>

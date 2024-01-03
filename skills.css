@@ -1,0 +1,122 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    /* margin-top: 20px; Add padding at the top for spacing */
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em; 
+    padding: 10px; 
+}
+
+/* Skills page styles */
+.skill {
+    text-align: center;
+    color: #007bff;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+hr {
+    border: 1px solid #007bff;
+    margin: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.s img {
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.s img:hover {
+    transform: scale(1.2);
+}
+
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.burger-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .burger-icon {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #007bff;
+        width: 100%;
+    }
+
+    .navigation a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Show navigation when burger icon is clicked */
+    .show-nav {
+        display: flex;
+    }
+}

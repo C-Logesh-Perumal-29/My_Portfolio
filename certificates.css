@@ -1,0 +1,128 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    /* margin-top: 20px; Add padding at the top for spacing */
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em; 
+    padding: 10px; 
+}
+
+.certificate{
+    text-align: center;
+    color: #007bff;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+hr {
+    border: 1px solid #007bff;
+    margin: 20px 0;
+}
+
+/* Style for the image grid container */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin: 0 20px;
+}
+
+/* Style for each image item */
+.image-item {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.image-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    display: block;
+    border-radius: 12px;
+}
+
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.burger-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    padding-top: 10px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .burger-icon {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #007bff;
+        width: 100%;
+    }
+
+    .navigation a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Show navigation when burger icon is clicked */
+    .show-nav {
+        display: flex;
+    }
+}
